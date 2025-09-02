@@ -1,7 +1,25 @@
 [
-  {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
-  }
+	{
+		"file": "experiments/example.js",
+		"name": "Name of your experiment",
+		"description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+	},
+
+	{
+		"file": "experiments/week1.js",
+		"name": "Week 1",
+		"description": "This first week I got inspired by..."
+	},
+
+	{
+		"file": "experiments/week2-3.js",
+		"name": "Week 2 -3",
+		"description": "This first week I got inspired by..."
+	},
+
+	{
+		"file": "experiments/week4.js",
+		"name": "Week 4",
+		"description": "This first week I got inspired by..."
+	}
 ]
