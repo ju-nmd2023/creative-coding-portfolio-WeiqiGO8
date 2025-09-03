@@ -26,5 +26,5 @@ function draw() {
 
 	counter += 0.1;
 	noFill();
-	noLoop();
+	// noLoop();
 }
