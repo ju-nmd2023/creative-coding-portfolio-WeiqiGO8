@@ -1,12 +1,12 @@
 function setup() {
 	createCanvas(innerWidth, innerHeight);
-	background(255, 255, 255);
-	frameRate(10);
+	background(0, 0, 0);
+	frameRate(30);
 }
 
 const originalY = 300;
 const divider = 20;
-noiseSeed(0);
+// noiseSeed(0);
 
 let counter = 0;
 
@@ -44,7 +44,7 @@ function bottomLine() {
 }
 
 function draw() {
-	clear();
+	// clear();
 	background(255, 255, 255);
 	stroke(25, random(20, 255), 100);
 
