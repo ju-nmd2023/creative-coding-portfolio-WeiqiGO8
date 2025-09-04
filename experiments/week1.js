@@ -1,12 +1,12 @@
 function setup() {
 	createCanvas(innerWidth, innerHeight);
 	background(0, 0, 0);
+	noiseSeed(0);
 	frameRate(30);
 }
 
 const originalY = 300;
 const divider = 20;
-// noiseSeed(0);
 
 let counter = 0;
 
