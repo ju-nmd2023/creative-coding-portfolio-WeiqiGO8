@@ -12,6 +12,12 @@
 	},
 
 	{
+		"file": "experiments/week1_02.js",
+		"name": "Moving lines version 2",
+		"description": "This first week I got inspired by noise_01.js file and lecture number 2 by Bassima during the live coding examples. For this version I ..."
+	},
+
+	{
 		"file": "experiments/week2-3.js",
 		"name": "Week 2 -3",
 		"description": "This first week I got inspired by..."
