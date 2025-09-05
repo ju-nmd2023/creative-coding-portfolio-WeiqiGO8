@@ -2,7 +2,7 @@ function setup() {
 	createCanvas(innerWidth, innerHeight);
 	background(0, 0, 0);
 	noiseSeed(0);
-	frameRate(30);
+	// frameRate(30);
 }
 
 const originalY = 300;
@@ -46,7 +46,7 @@ function bottomLine() {
 function draw() {
 	// clear();
 	background(255, 255, 255);
-	stroke(25, random(20, 255), 100);
+	stroke(random(255), random(255), random(255));
 
 	topLine();
 	middleLine();
@@ -54,7 +54,7 @@ function draw() {
 
 	// Y AXIS LINE
 
-	counter += 0.1;
+	// counter += 0.1;
 	noFill();
 	// noLoop();
 }

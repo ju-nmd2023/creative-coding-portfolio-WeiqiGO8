@@ -17,7 +17,7 @@ function topLine() {
 	stroke(random(10, 255), 10, 50);
 	for (let x = 0; x < width; x++) {
 		// const y = originalY + Math.random() * 100;
-		const y = -100 + originalY + noise(x / divider + 300, counter) * 100;
+		const y = -100 + originalY + noise(x / divider + 300, counter) * 20;
 		vertex(x, y);
 	}
 	endShape();
@@ -41,7 +41,7 @@ function bottomLine() {
 	stroke(25, 50, random(10, 255));
 	for (let x = 0; x < width; x++) {
 		// const y = originalY + Math.random() * 100;
-		const y = 100 + originalY + noise((x / divider) * 6, counter) * 60;
+		const y = 100 + originalY + noise((x / divider) * 8, counter) * 30;
 		vertex(x, y);
 		endShape();
 	}
@@ -50,10 +50,10 @@ function bottomLine() {
 // BOTTOM X AXIS LINE
 function absoluteBottomLine() {
 	beginShape();
-	stroke(25, 50, random(10, 255));
+	stroke(random(10, 255), 50, 25);
 	for (let x = 0; x < width; x++) {
 		// const y = originalY + Math.random() * 100;
-		const y = 200 + originalY + noise((x / divider) * 6, counter) * 60;
+		const y = 200 + originalY + noise((x / divider) * 40, counter) * 200;
 		vertex(x, y);
 		endShape();
 	}
@@ -61,7 +61,7 @@ function absoluteBottomLine() {
 
 function draw() {
 	clear();
-	background(255, 255, 255);
+	background(0, 0, 0);
 
 	topLine();
 	middleLine();
