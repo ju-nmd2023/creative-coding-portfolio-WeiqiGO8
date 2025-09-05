@@ -32,6 +32,6 @@
 	{
 		"file": "experiments/molnar_alternative_03.js",
 		"name": "Moving shapes with random individual stroke colors",
-		"description": "FOr this variation of Molnar I took inspiration from my classmate Kacper Paska. He played around with the shape and colors in his molnar variation. I wanted to try that without copying his work. So I made a different shape and added random colors to each individual stroke."
+		"description": "For this variation of Molnar I took inspiration from my classmate Kacper Paska. He played around with the shape and colors in his molnar variation. I wanted to try that without copying his work. So I made a different shape and added random colors to each individual stroke."
 	}
 ]
