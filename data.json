@@ -1,11 +1,5 @@
 [
 	{
-		"file": "experiments/example.js",
-		"name": "Name of your experiment",
-		"description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
-	},
-
-	{
 		"file": "experiments/noise1_alternative_01.js",
 		"name": "color changing lines",
 		"description": "This first week I got inspired by noise_01.js file and lecture number 2 by Bassima during the live coding examples. I got the idea to try adding two more lines and make them switch random color."
