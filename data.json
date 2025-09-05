@@ -20,18 +20,18 @@
 	{
 		"file": "experiments/molnar_alternative_01.js",
 		"name": "Molanar squares, but with random colors",
-		"description": "For this work I got inspiration from multiple artists. Which will become apparrent in the later versions. The molnar example from lecture 3, live coding with Bassima, Portfolio example from Evellin Miyamoto, and one of my classmates, Kacper Paska. I wanted to see how the squares would look like on a white background but with random colors added to the stroke."
+		"description": "For this work I got inspiration from multiple artists. Which will become apparrent in the later versions. But for this first version, I got inspired by the molnar example from lecture 3, live coding with Bassima. I wanted to see how the squares would look like on a white background but with random colors added to the stroke."
 	},
 
 	{
 		"file": "experiments/molnar_alternative_02.js",
 		"name": "Shifting colors",
-		"description": "For this next variation I wanted to see how it would look like with more strokes in each square and random colors to the strokes. However, I added more layerse to each generated square to see how it would look."
+		"description": "For this variation of Molnar, I took inspiration from the portfolio example from Evellin Miyamoto. However, compared to her example, I wanted to see how it would look like if I added more layers to each generated quare and keep the random colors to the strokes."
 	},
 
 	{
 		"file": "experiments/molnar_alternative_03.js",
 		"name": "Moving shapes with random individual stroke colors",
-		"description": "For this variation of Molnar I took inspiration from my classmate Kacper Paska. He played around with the shape and colors in his molnar variation. I wanted to try that without copying his work. So I made a different shape and added random colors to each individual stroke."
+		"description": "For this variation of Molnar, I took inspiration from my classmate Kacper Paska. He played around with the shape and colors in his molnar variation. I wanted to try that without copying his work. So I made a different shape and added random colors to each individual stroke."
 	}
 ]
