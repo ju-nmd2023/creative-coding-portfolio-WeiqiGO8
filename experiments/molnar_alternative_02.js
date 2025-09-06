@@ -1,3 +1,5 @@
+// The following code is isnpired by Teacher Assistent Evellin Miyamoto portfolio example from 2024.
+
 function setup() {
 	createCanvas(innerWidth, innerHeight);
 	frameRate(10);

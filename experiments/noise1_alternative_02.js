@@ -1,3 +1,5 @@
+// The following code is inspired by Lecture 2, live coding with Bassima and from CodeExamples-Garrit code example noise_03.js.
+
 function setup() {
 	createCanvas(innerWidth, innerHeight);
 	background(0, 0, 0);

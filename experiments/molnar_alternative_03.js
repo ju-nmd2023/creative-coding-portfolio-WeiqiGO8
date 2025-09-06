@@ -1,3 +1,5 @@
+// The following code is inspired by fellow classmate Kacper Paska variation of lecture 3, live coding with Bassima and from CodeExamples-Garrit code example molnar.js.
+
 function setup() {
 	createCanvas(innerWidth, innerHeight);
 	frameRate(10);
