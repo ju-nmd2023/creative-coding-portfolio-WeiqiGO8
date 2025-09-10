@@ -49,6 +49,12 @@ function drawLayers(x, y, size, layers) {
 
 function draw() {
 	// clear();
+
+	// The following 3 lines of code was taken from ChatGPT 2025-09-10: https://chatgpt.com/share/68c122d1-1e98-800d-a675-ba35fe4bf96d
+	let gridWidth = size * 10;
+	let gridHeight = size * 10;
+	translate((width - gridWidth) / 2, (height - gridHeight) / 2);
+
 	stroke(255, 255, 255);
 	background(10, 10, 10);
 
