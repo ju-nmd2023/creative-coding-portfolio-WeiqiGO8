@@ -11,6 +11,9 @@ const maxCols = Math.ceil(innerWidth / fieldSize);
 const maxRows = Math.ceil(innerHeight / fieldSize);
 const divider = 2;
 
+// The following 1 line of code is taken from ChatGPT 2025-09-15: https://chatgpt.com/share/68c7b01b-d568-800d-a579-17715eb7d691
+const rotationSpeed = 0.1;
+
 function arrowFlowField() {
 	for (let x = 0; x < maxCols; x++) {
 		for (let y = 0; y < maxRows; y++) {
@@ -18,11 +21,14 @@ function arrowFlowField() {
 			const value = noise(x / divider, y / divider) * Math.PI * 2;
 			push();
 			translate(x * fieldSize + fieldSizeHalf, y * fieldSize + fieldSizeHalf);
-			rotate(random(value));
+
+			// The following 1 line of code is taken from ChatGPT 2025-09-15: https://chatgpt.com/share/68c7b01b-d568-800d-a579-17715eb7d691
+			rotate(value - frameCount * rotationSpeed);
+
 			strokeWeight(2);
 			// Drawing an arrow
 			fill(random(200), random(180), random(200));
-			line(-fieldSizeHalf + padding, 0, fieldSizeHalf - padding, 0);
+			line(-fieldSizeHalf + padding, 50, fieldSizeHalf - padding, 0);
 			triangle(
 				fieldSizeHalf / padding,
 				0,
