@@ -88,7 +88,7 @@ function mousePressed() {
 		});
 	} else if (synth) {
 		//Play random note on click
-		const notes = ["c4", "d#3", "g4", "c#1", "ab4"];
+		const notes = ["c4", "d#3", "g4", "c#1", "a4"];
 		const note = random(notes);
 		synth.triggerAttackRelease(note, "8n");
 	}
