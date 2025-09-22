@@ -1,7 +1,7 @@
 [
 	{
 		"file": "experiments/noise1_alternative_01.js",
-		"name": "color changing lines",
+		"name": "Color changing lines",
 		"description": "This first week I got inspired by noise_01.js file and lecture number 2 by Bassima during the live coding examples. I got the idea to try adding two more lines and make them switch random color."
 	},
 
@@ -31,19 +31,19 @@
 
 	{
 		"file": "experiments/flow-field1_alternative.js",
-		"name": "arrowed flow field",
-		"description": "For this variation of flow field..."
+		"name": "Arrowed flow field",
+		"description": "For this variation of flow field I took inspiration from the lecture CC Complexity by Bassima and the flow field example 1 by Garritt. I wanted to see how much I could change the shape of the arrows while still keep it as a flow field. Because it was suppose to be a bit more advanced, I also added random colors, and a counter and rotationSpeed to make the arrows rotate on it's axis"
 	},
 
 	{
 		"file": "experiments/flow-field2_alternative.js",
-		"name": "lined flow field",
-		"description": "For this variation of flow field...test"
+		"name": "Lined flow field",
+		"description": "For this variation of flow field I took inspiration from the lecture CC Complexity by Bassima and the flow field example 2 by Garritt. I experimented with changing the values and numbers to see how it would affect the flow field. Additionally, I added random color to it to the stroke to make it more colorful."
 	},
 
 	{
 		"file": "experiments/flow-field1_sound_alternative.js",
-		"name": "lined flow field",
-		"description": "For this variation of flow field...test"
+		"name": "Sound flow field",
+		"description": "For this variation of flow field I took inspiration from my classmate Kacper Paska. He added movement to one of his art pieces. I wanted to see if I could add that to my flowfield variation too. Furthmore, the idea also fit well with trying to add sound from Tone.js."
 	}
 ]
