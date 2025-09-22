@@ -4,6 +4,7 @@ let angles = [];
 
 function setup() {
 	createCanvas(innerWidth, innerHeight);
+
 	for (let x = 0; x < maxCols; x++) {
 		angles[x] = [];
 		for (let y = 0; y < maxRows; y++) {
@@ -30,16 +31,17 @@ function arrowFlowField() {
 			translate(x * fieldSize + fieldSizeHalf, y * fieldSize + fieldSizeHalf);
 			// The following 1 line of code is taken from ChatGPT 2025-09-15: https://chatgpt.com/share/68c7b01b-d568-800d-a579-17715eb7d691
 			rotate(value - frameCount * rotationSpeed);
-			if (mouseX < 50) {
+
+			if (mouseX < 10) {
 				rotate(angles[x][y]);
 			}
-			if (mouseX > 50) {
+			if (mouseX > 10) {
 				rotate(angles[x][y]);
 			}
-			if (mouseY < 50) {
+			if (mouseY < 10) {
 				rotate(angles[x][y]);
 			}
-			if (mouseY > 50) {
+			if (mouseY > 10) {
 				rotate(angles[x][y]);
 			}
 
@@ -72,9 +74,5 @@ function mouseMoved() {
 
 function draw() {
 	background(255, 255, 255);
-	// drawFlowField();
 	arrowFlowField();
-	// mouseMoved();
-
-	// noLoop();
 }
