@@ -41,23 +41,21 @@ function arrowFlowField() {
 			const value = noise(x / divider, y / divider) * Math.PI * 2;
 			push();
 			translate(x * fieldSize + fieldSizeHalf, y * fieldSize + fieldSizeHalf);
+
 			// The following 1 line of code is taken from ChatGPT 2025-09-15: https://chatgpt.com/share/68c7b01b-d568-800d-a579-17715eb7d691
 			rotate(value - frameCount * rotationSpeed);
 
+			// The following line, rotate(angles[x][y]);, was taken from https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 			if (mouseX < 10) {
-				// The following 1 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 				rotate(angles[x][y]);
 			}
 			if (mouseX > 10) {
-				// The following 1 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 				rotate(angles[x][y]);
 			}
 			if (mouseY < 10) {
-				// The following 1 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 				rotate(angles[x][y]);
 			}
 			if (mouseY > 10) {
-				// The following 1 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 				rotate(angles[x][y]);
 			}
 
