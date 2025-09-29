@@ -3,10 +3,6 @@
 // The following 1 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 let angles = [];
 
-//The following 2 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d19f73-5590-800d-b3f7-2bdd9ee59d25
-let synth;
-let toneStarted = false;
-
 const fieldSize = 50;
 const fieldSizeHalf = fieldSize / 2;
 const maxCols = Math.ceil(innerWidth / fieldSize);
@@ -21,9 +17,6 @@ function setup() {
 
 	//The following 4 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d19f73-5590-800d-b3f7-2bdd9ee59d25
 	//create synth only when Tone is ready
-	if (typeof Tone !== "undefined") {
-		synth = new Tone.PolySynth(Tone.Synth).toDestination();
-	}
 
 	// The following 6 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 	for (let x = 0; x < maxCols; x++) {
@@ -76,22 +69,6 @@ function arrowFlowField() {
 	}
 }
 
-//The following 14 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d19f73-5590-800d-b3f7-2bdd9ee59d25
-function mousePressed() {
-	if (!toneStarted && synth) {
-		Tone.start().then(() => {
-			toneStarted = true;
-			console.log("Tone.js started!");
-			synth.triggerAttackRelease("c4", "8n"); //Play a first note
-		});
-	} else if (synth) {
-		//Play random note on click
-		const notes = ["c4", "d#3", "g4", "c#1", "a4"];
-		const note = random(notes);
-		synth.triggerAttackRelease(note, "8n");
-	}
-}
-
 function mouseMoved() {
 	// The following 7 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d1a013-dd90-800d-ad5d-f12c626cecc1
 	for (let x = 0; x < maxCols; x++) {
@@ -100,13 +77,6 @@ function mouseMoved() {
 			const cy = y * fieldSize + fieldSizeHalf;
 			angles[x][y] = atan2(mouseY - cy, mouseX - cx);
 		}
-	}
-
-	//The following 5 lines of code was taken from ChatGPT 2025-09-22: https://chatgpt.com/share/68d19f73-5590-800d-b3f7-2bdd9ee59d25
-	if (synth && toneStarted) {
-		//map mouse position to pitch
-		const note = map(mouseX, 0, width, 48, 72); //midi note range
-		synth.triggerAttackRelease(Tone.Frequency(note, "midi").toNote(), "16n");
 	}
 }
 

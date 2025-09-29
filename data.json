@@ -42,14 +42,14 @@
 	},
 
 	{
-		"file": "experiments/flow-field1_sound-alternative-03.js",
-		"name": "Sound flow field",
+		"file": "experiments/flow-field1_alternative_03.js",
+		"name": "Interactive flow field",
 		"description": "For this variation of flow field I took inspiration from my classmate Kacper Paska. He added movement to one of his art pieces by making it react to his mouse, making it more interactive. I wanted to see if I could add that to my flowfield variation too."
 	},
 
 	{
-		"file": "experiments/flow-field1_sound-alternative-01.js",
+		"file": "experiments/flow-field1_sound-alternative_01.js",
 		"name": "Sound flow field",
-		"description": "For this variation of flow field I used the previous flow field that reacts to the mouse to also add sound from Tone.js."
+		"description": "For this variation of flow field I used the interactive flow field, that reacts to the mouse, to also add sound from Tone.js."
 	}
 ]
